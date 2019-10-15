@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Excluir Cadastro de Turma</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a949a5f9-5b73-4847-8006-fefd2b8d95c8</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Consultar Turmas por Escola</name>
+   <tag>Automation_Test</tag>
+   <comment></comment>
+   <testCaseGuid>bbf2361d-6845-4eda-b215-d37282b9127d</testCaseGuid>
+</TestCaseEntity>

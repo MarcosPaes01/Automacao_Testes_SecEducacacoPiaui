@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Importar Alunos via Excel</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>be2a9689-a7f1-49c0-abc5-440f7df54abf</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Excluir Cadastro de um Cliente</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b29e65e9-9aaa-4970-981c-f708aa93536b</testCaseGuid>
+</TestCaseEntity>
