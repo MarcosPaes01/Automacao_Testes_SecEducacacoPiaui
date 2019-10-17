@@ -19,48 +19,66 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-
-import com.thoughtworks.selenium.Selenium
-import org.openqa.selenium.firefox.FirefoxDriver
-import org.openqa.selenium.WebDriver
-import com.thoughtworks.selenium.webdriven.WebDriverBackedSelenium
+import com.thoughtworks.selenium.Selenium as Selenium
+import org.openqa.selenium.firefox.FirefoxDriver as FirefoxDriver
+import org.openqa.selenium.WebDriver as WebDriver
+import com.thoughtworks.selenium.webdriven.WebDriverBackedSelenium as WebDriverBackedSelenium
 import static org.junit.Assert.*
-import java.util.regex.Pattern
+import java.util.regex.Pattern as Pattern
 import static org.apache.commons.lang3.StringUtils.join
 
-WebUI.openBrowser('https://www.katalon.com/')
+not_run: WebUI.openBrowser('https://www.katalon.com/')
+
 def driver = DriverFactory.getWebDriver()
-String baseUrl = "https://www.katalon.com/"
+
+String baseUrl = 'https://www.katalon.com/'
+
 selenium = new WebDriverBackedSelenium(driver, baseUrl)
-selenium.open("https://beta.meudica.com.br/login")
-selenium.type("name=email", "marcos.silva@isgsa.com.br")
-selenium.type("name=senha", "123456789")
-selenium.click("class=btn btn-primary btn-lg btn-block")
-selenium.click("link=Admin")
-selenium.click("link=⟫ Secretarias")
 
+selenium.open('https://beta.meudica.com.br/login')
 
-selenium.click("link=Nova secretaria")
-selenium.type("id=nome", "Secretaria de teste")
-selenium.type("id=cep", "70000-000")
-selenium.type("id=endereco", "SIG QD 04 Lote 625")
-selenium.type("id=bairro", "Setor gráfico")
-selenium.type("id=numero", "625")
-selenium.type("id=bairro", "Setor Gráfico")
+selenium.type('name=email', 'marcos.silva@isgsa.com.br')
 
-selenium.click("id=select2-cidade-container")
+selenium.type('name=senha', '123456789')
 
-selenium.type("id=cnpj", "32.237.218/0001-50")
-selenium.type("id=responsavel", "Marcos Paes") 
-selenium.type("id=telefone1", "(61) 99999-9999")
-selenium.type("id=email", "marcospaes35@gmail.com")
+selenium.click('class=btn btn-primary btn-lg btn-block')
 
+selenium.click('link=Admin')
 
-selenium.click("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cancelar'])[1]/following::button[1]")
-selenium.click("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ativo'])[1]/following::button[1]")
+selenium.click('link=⟫ Secretarias')
+
+selenium.click('link=Nova secretaria')
+
+selenium.type('id=nome', 'Secretaria de teste')
+
+selenium.type('id=cep', '70000-000')
+
+selenium.type('id=endereco', 'SIG QD 04 Lote 625')
+
+selenium.type('id=bairro', 'Setor gráfico')
+
+selenium.type('id=numero', '625')
+
+selenium.type('id=bairro', 'Setor Gráfico')
+
+selenium.click('id=select2-cidade-container')
+
+selenium.type('id=cnpj', '32.237.218/0001-50')
+
+selenium.type('id=responsavel', 'Marcos Paes')
+
+selenium.type('id=telefone1', '(61) 99999-9999')
+
+selenium.type('id=email', 'marcospaes35@gmail.com')
+
+selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Cancelar\'])[1]/following::button[1]')
+
+selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Ativo\'])[1]/following::button[1]')
+
 selenium.chooseOkOnNextConfirmation()
-selenium.click("link=Excluir")
 
+selenium.click('link=Excluir')
 
 //assertTrue(selenium.getConfirmation().matches("^Você tem certeza[\\s\\S]$"));
-selenium.click("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Marcos Paes'])[1]/preceding::li[1]")
+selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Marcos Paes\'])[1]/preceding::li[1]')
+
